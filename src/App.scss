@@ -1,0 +1,74 @@
+.main{
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 15px;
+  box-sizing: border-box;
+}
+.header{
+  padding-bottom: 20px;
+  &__form{
+    display: flex;
+    >div{
+      flex: 1;
+    }
+  }
+  &__title{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+.task{
+  display: flex;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 5px 0;
+  &__name{
+    flex: 1;
+  }
+  &__buttons{
+    display: flex;
+  }
+  &__button{
+    padding:0 5px;
+    &-state{
+      color: #3f51b5;
+    }
+    &-delete{
+      color: #f50057;
+    }
+  }
+}
+.timer{
+  padding: 0 5px;
+}
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba($color:#000,$alpha: .5);
+  &__inner{
+    padding: 20px;
+    width: 270px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    padding-bottom: 30px;
+  }
+  &__buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

@@ -14,7 +14,7 @@ export default function Header() {
         e.preventDefault();
         const id = (new Date()).getTime();
         const name = e.target.name.value;
-        const timer = {sec: 0};
+        const timer = { start: (new Date()).getTime(), stop: false, sec: 0 ,reload: (new Date()).getTime()};
         dispatch(addTask(id, name, timer, true));
         setValue('');
     }
